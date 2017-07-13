@@ -78,6 +78,8 @@
 		38892DAD1F1753B5000D6591 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38892DAF1F1753B5000D6591 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		38892DB81F1755CD000D6591 /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		38892DBA1F17589E000D6591 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		38892DBB1F17589E000D6591 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,8 @@
 		38892D661F1752FF000D6591 = {
 			isa = PBXGroup;
 			children = (
+				38892DBA1F17589E000D6591 /* LICENSE */,
+				38892DBB1F17589E000D6591 /* README.md */,
 				38892D721F1752FF000D6591 /* UIKitExtension */,
 				38892D7D1F1752FF000D6591 /* UIKitExtensionTests */,
 				38892DA21F1753B5000D6591 /* UIKitExtensionDemo */,
