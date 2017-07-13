@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>UIKitExtensionDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,11 @@
 			<true/>
 		</dict>
 		<key>38892D781F1752FF000D6591</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>38892DA01F1753B5000D6591</key>
 		<dict>
 			<key>primary</key>
 			<true/>
