@@ -24,6 +24,7 @@
 		38892DB31F1753C1000D6591 /* UIKitExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38892D701F1752FF000D6591 /* UIKitExtension.framework */; };
 		38892DB41F1753C1000D6591 /* UIKitExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38892D701F1752FF000D6591 /* UIKitExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		38892DB91F1755CD000D6591 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38892DB81F1755CD000D6591 /* Fruit.swift */; };
+		38892DC21F1867A1000D6591 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38892DC11F1867A1000D6591 /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		38892DB81F1755CD000D6591 /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		38892DBA1F17589E000D6591 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		38892DBB1F17589E000D6591 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		38892DC11F1867A1000D6591 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		38892D8A1F175334000D6591 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				38892DC11F1867A1000D6591 /* UIViewController.swift */,
 				38892D8B1F175334000D6591 /* UIContainerController.swift */,
 				38892D8C1F175334000D6591 /* UIDrawerController */,
 				38892D8F1F175334000D6591 /* UIPageTabBarController */,
@@ -346,6 +349,7 @@
 				38892D941F175334000D6591 /* UIDrawerController.swift in Sources */,
 				38892D931F175334000D6591 /* UIContainerController.swift in Sources */,
 				38892D981F175334000D6591 /* UIPageTabBarController.swift in Sources */,
+				38892DC21F1867A1000D6591 /* UIViewController.swift in Sources */,
 				38892D9C1F17539C000D6591 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -607,6 +611,7 @@
 				38892D861F1752FF000D6591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38892D871F1752FF000D6591 /* Build configuration list for PBXNativeTarget "UIKitExtensionTests" */ = {
 			isa = XCConfigurationList;
@@ -615,6 +620,7 @@
 				38892D891F1752FF000D6591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		38892DB01F1753B5000D6591 /* Build configuration list for PBXNativeTarget "UIKitExtensionDemo" */ = {
 			isa = XCConfigurationList;
@@ -623,6 +629,7 @@
 				38892DB21F1753B5000D6591 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

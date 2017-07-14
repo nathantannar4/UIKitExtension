@@ -43,6 +43,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         left.title = "UIDrawerController"
         let drawer = UIDrawerController(centerViewController: nav, leftViewController: UINavigationController(rootViewController: left))
         //        nav.setNavigationBarHidden(true, animated: false)
+        
+        
+        
+        
         window?.rootViewController = drawer
         window?.makeKeyAndVisible()
         

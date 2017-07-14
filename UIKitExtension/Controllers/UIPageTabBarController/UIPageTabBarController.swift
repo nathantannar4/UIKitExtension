@@ -226,6 +226,10 @@ open class UIPageTabBarController: UIViewController {
             self.view.layoutIfNeeded()
         }
     }
+    
+    open func tabBar(_ tabBar: UIPageTabBar, cellForitemAt indexPath: IndexPath) -> UICollectionViewCell? {
+        return nil
+    }
 }
 
 extension UIPageTabBarController: UIPageViewControllerDataSource {
