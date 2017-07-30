@@ -24,7 +24,11 @@
 		38892DB31F1753C1000D6591 /* UIKitExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38892D701F1752FF000D6591 /* UIKitExtension.framework */; };
 		38892DB41F1753C1000D6591 /* UIKitExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 38892D701F1752FF000D6591 /* UIKitExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		38892DB91F1755CD000D6591 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38892DB81F1755CD000D6591 /* Fruit.swift */; };
-		38892DC21F1867A1000D6591 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38892DC11F1867A1000D6591 /* UIViewController.swift */; };
+		38892FE61F1DC0CC000D6591 /* UIExpandableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38892FE51F1DC0CC000D6591 /* UIExpandableView.swift */; };
+		38892FF71F1DC354000D6591 /* Datasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38892FF21F1DC354000D6591 /* Datasource.swift */; };
+		38892FF91F1DC354000D6591 /* UIDatasourceViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38892FF41F1DC354000D6591 /* UIDatasourceViewCell.swift */; };
+		38892FFA1F1DC354000D6591 /* UIDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38892FF51F1DC354000D6591 /* UIDatasourceController.swift */; };
+		38892FFB1F1DC354000D6591 /* UIDatasourceDefaultViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38892FF61F1DC354000D6591 /* UIDatasourceDefaultViewCells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,7 +85,11 @@
 		38892DB81F1755CD000D6591 /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		38892DBA1F17589E000D6591 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		38892DBB1F17589E000D6591 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		38892DC11F1867A1000D6591 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		38892FE51F1DC0CC000D6591 /* UIExpandableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExpandableView.swift; sourceTree = "<group>"; };
+		38892FF21F1DC354000D6591 /* Datasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Datasource.swift; path = UIDatasourceController/Datasource.swift; sourceTree = "<group>"; };
+		38892FF41F1DC354000D6591 /* UIDatasourceViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIDatasourceViewCell.swift; path = UIDatasourceController/UIDatasourceViewCell.swift; sourceTree = "<group>"; };
+		38892FF51F1DC354000D6591 /* UIDatasourceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIDatasourceController.swift; path = UIDatasourceController/UIDatasourceController.swift; sourceTree = "<group>"; };
+		38892FF61F1DC354000D6591 /* UIDatasourceDefaultViewCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIDatasourceDefaultViewCells.swift; path = UIDatasourceController/UIDatasourceDefaultViewCells.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +147,7 @@
 				38892D731F1752FF000D6591 /* UIKitExtension.h */,
 				38892D741F1752FF000D6591 /* Info.plist */,
 				38892D9B1F17539C000D6591 /* Extensions.swift */,
+				38892FE41F1DC0B9000D6591 /* Views */,
 				38892D8A1F175334000D6591 /* Controllers */,
 			);
 			path = UIKitExtension;
@@ -156,8 +165,8 @@
 		38892D8A1F175334000D6591 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				38892DC11F1867A1000D6591 /* UIViewController.swift */,
 				38892D8B1F175334000D6591 /* UIContainerController.swift */,
+				38892FE71F1DC329000D6591 /* UIDatasourceController */,
 				38892D8C1F175334000D6591 /* UIDrawerController */,
 				38892D8F1F175334000D6591 /* UIPageTabBarController */,
 			);
@@ -194,6 +203,25 @@
 				38892DAF1F1753B5000D6591 /* Info.plist */,
 			);
 			path = UIKitExtensionDemo;
+			sourceTree = "<group>";
+		};
+		38892FE41F1DC0B9000D6591 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				38892FE51F1DC0CC000D6591 /* UIExpandableView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		38892FE71F1DC329000D6591 /* UIDatasourceController */ = {
+			isa = PBXGroup;
+			children = (
+				38892FF21F1DC354000D6591 /* Datasource.swift */,
+				38892FF41F1DC354000D6591 /* UIDatasourceViewCell.swift */,
+				38892FF51F1DC354000D6591 /* UIDatasourceController.swift */,
+				38892FF61F1DC354000D6591 /* UIDatasourceDefaultViewCells.swift */,
+			);
+			name = UIDatasourceController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,12 +372,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				38892D971F175334000D6591 /* UIPageTabBarItem.swift in Sources */,
+				38892FFB1F1DC354000D6591 /* UIDatasourceDefaultViewCells.swift in Sources */,
 				38892D961F175334000D6591 /* UIPageTabBar.swift in Sources */,
 				38892D9A1F17534C000D6591 /* UIDrawerMenuItem.swift in Sources */,
 				38892D941F175334000D6591 /* UIDrawerController.swift in Sources */,
+				38892FFA1F1DC354000D6591 /* UIDatasourceController.swift in Sources */,
 				38892D931F175334000D6591 /* UIContainerController.swift in Sources */,
 				38892D981F175334000D6591 /* UIPageTabBarController.swift in Sources */,
-				38892DC21F1867A1000D6591 /* UIViewController.swift in Sources */,
+				38892FE61F1DC0CC000D6591 /* UIExpandableView.swift in Sources */,
+				38892FF91F1DC354000D6591 /* UIDatasourceViewCell.swift in Sources */,
+				38892FF71F1DC354000D6591 /* Datasource.swift in Sources */,
 				38892D9C1F17539C000D6591 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -27,7 +27,7 @@
 
 import UIKit
 
-/// A controller designed to be subclassed as a starting point to make custom container controllers
+/// A controller designed to be subclassed to easily make custom container controllers
 open class UIContainerController: UIViewController {
     
     public var viewControllers: [String:UIViewController] {
@@ -63,9 +63,6 @@ open class UIContainerController: UIViewController {
     ///   - key: If not nil, the viewController will be hashable via the 'viewControllers' array
     open func addViewController(_ viewController: UIViewController, animated: Bool = false, forKey key: String?) {
         
-        if let key = key {
-            _viewControllers[key] = viewController
-        }
         viewController.willMove(toParentViewController: self)
         addChildViewController(viewController)
         viewController.beginAppearanceTransition(true, animated: animated)
@@ -73,6 +70,9 @@ open class UIContainerController: UIViewController {
         controllerIsTransitioning(viewController, isAppearing: true, animated: animated)
         viewController.endAppearanceTransition()
         viewController.didMove(toParentViewController: self)
+        if let key = key {
+            _viewControllers[key] = viewController
+        }
     }
     
     

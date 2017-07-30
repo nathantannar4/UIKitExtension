@@ -18,37 +18,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        
-        var vcs = [UIViewController]()
-        for fruit in Fruit.all() {
-            let vc = UIViewController()
-            vc.tabBarItem.image = fruit.image()?.withRenderingMode(.alwaysTemplate)
-            vc.title = fruit.rawValue
-            vc.view.backgroundColor = fruit.color()
-            vcs.append(vc)
-        }
-        
-        let pageVC = UIPageTabBarController(viewControllers: vcs)
-        //        pageVC.tabBarPosition = .bottom
-        //        pageVC.tabBarEdgeInsets.top = 20
-        pageVC.tabBarHeight = 22
-        pageVC.currentTabLineHeight = 2.5
-        pageVC.tabBarItemWidth = 100
-        //        pageVC.currentTabLineColor = .green
-        pageVC.tabBar.tintColor = UIColor.black
-        pageVC.title = "UIPageTabViewController"
-        let nav = UINavigationController(rootViewController: pageVC)
-        let left = UIViewController()
-        left.view.backgroundColor = .white
-        left.title = "UIDrawerController"
-        let drawer = UIDrawerController(centerViewController: nav, leftViewController: UINavigationController(rootViewController: left))
-        //        nav.setNavigationBarHidden(true, animated: false)
-        
-        
-        
-        
-        window?.rootViewController = drawer
+        window?.rootViewController = UINavigationController(rootViewController: UIPageTabBarController(viewControllers: [ViewController()]))
         window?.makeKeyAndVisible()
+        
+//        var vcs = [UIViewController]()
+//        for fruit in Fruit.all() {
+//            let vc = UIViewController()
+//            vc.tabBarItem.image = fruit.image()?.withRenderingMode(.alwaysTemplate)
+//            vc.title = fruit.rawValue
+//            vc.view.backgroundColor = fruit.color()
+//            vcs.append(vc)
+//        }
+//        
+//        let pageVC = UIPageTabBarController(viewControllers: vcs)
+//        //        pageVC.tabBarPosition = .bottom
+//        //        pageVC.tabBarEdgeInsets.top = 20
+//        pageVC.tabBarHeight = 22
+//        pageVC.currentTabLineHeight = 2.5
+//        pageVC.tabBarItemWidth = 100
+//        //        pageVC.currentTabLineColor = .green
+//        pageVC.tabBar.tintColor = UIColor.black
+//        pageVC.title = "UIPageTabViewController"
+//        let nav = UINavigationController(rootViewController: pageVC)
+//        let left = UIViewController()
+//        left.view.backgroundColor = .white
+//        left.title = "UIDrawerController"
+//        let drawer = UIDrawerController(centerViewController: nav, leftViewController: UINavigationController(rootViewController: left))
+//        //        nav.setNavigationBarHidden(true, animated: false)
+//        window?.rootViewController = drawer
+//        window?.makeKeyAndVisible()
         
         return true
     }

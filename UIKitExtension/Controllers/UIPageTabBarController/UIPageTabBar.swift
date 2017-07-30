@@ -283,16 +283,12 @@ extension UIPageTabBar: UICollectionViewDataSource {
     }
     
     open func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        guard let customCell = controller?.tabBar(self, cellForitemAt: indexPath) else {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UIPageTabBarItem.cellIdentifier, for: indexPath) as! UIPageTabBarItem
-            cell.titleLabel.text = controller?.viewControllers[indexPath.row].title
-            cell.isCurrent = indexPath.item == (currentIndex % numberOfTabs)
-            cell.iconView.image = controller?.viewControllers[indexPath.row].tabBarItem.image
-            cell.tintColor = tintColor
-            return cell
-        }
-        return customCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: UIPageTabBarItem.cellIdentifier, for: indexPath) as! UIPageTabBarItem
+        cell.titleLabel.text = controller?.viewControllers[indexPath.row].title
+        cell.isCurrent = indexPath.item == (currentIndex % numberOfTabs)
+        cell.iconView.image = controller?.viewControllers[indexPath.row].tabBarItem.image
+        cell.tintColor = tintColor
+        return cell
     }
     
     open func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
